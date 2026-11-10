@@ -54,7 +54,7 @@ classDiagram
 
 ## Level 2 - Task 2.1: complete use case diagram
 
-Mermaid does not have a native UML use case diagram type, so this flowchart uses a system boundary and labelled `include` / `extend` relations.
+Mermaid does not have a native UML use case diagram type, so this flowchart uses a system boundary, actor boxes, and labelled `«include»` / `«extend»` relations. It is a readable approximation rather than a formal UML use case drawing.
 
 ```mermaid
 flowchart LR
@@ -79,16 +79,17 @@ flowchart LR
     M --- MP
     R --- OU
     N --- MA
+    R -.->|specializes| M
     OC --- PR
     OC --- VM
     CC --- MP
-    PO -.->|include| VM
-    PR -.->|include| VI
-    PR -.->|include| PI
-    PR -.->|include| PS
-    AD -.->|extend: Royal member| PR
-    OU -.->|extend: Royal and unavailable| PR
-    MA -.->|extend: Not a member| VM
+    PO -.->|«include»| VM
+    PR -.->|«include»| VI
+    PR -.->|«include»| PI
+    PR -.->|«include»| PS
+    AD -.->|«extend»: Royal member| PR
+    OU -.->|«extend»: Royal and unavailable| PR
+    MA -.->|«extend»: Not a member| VM
 ```
 
 ## Level 2 - Task 2.2: complete class diagram
