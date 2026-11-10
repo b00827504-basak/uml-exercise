@@ -8,9 +8,9 @@ The exercise has two cases:
 
 ## My approach
 
-I first planned the UML diagrams on paper. Then I made digital diagrams and wrote simple Python examples based on the designs.
+The course exercise suggests planning UML on paper first. This repository contains the digital diagrams and small Python examples. Paper drafts are not included in the repository.
 
-The Python files are small examples, not complete websites or real payment systems.
+The Python files are small examples, not complete websites or real payment systems. The use case views are Mermaid flowcharts representing UML use cases because Mermaid does not support native UML use case notation.
 
 ## Files
 
